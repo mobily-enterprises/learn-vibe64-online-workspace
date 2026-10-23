@@ -64,6 +64,9 @@
       "deploy-address",
       "deploy-releases"
     ],
+    "activities": [
+      "app-deployed"
+    ],
     "facts": [
       "deployment-live"
     ]
