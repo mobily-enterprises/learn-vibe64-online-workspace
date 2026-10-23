@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "code": "V64-WORKSPACE-05",
+  "title": "Your own domain",
+  "stage": "studio",
+  "notes": "notes.md",
+  "prerequisites": [{ "code": "V64-WORKSPACE-03" }],
+  "estimatedMinutes": 15,
+  "visuals": [],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/sign-app",
+    "reuse": "attempt"
+  },
+  "steps": [
+    { "id": "welcome", "title": "Welcome", "body": "steps/welcome.md", "check": { "kind": "none" }, "required": false },
+    { "id": "deploy-it", "title": "Deploy the sign", "body": "steps/deploy-it.md", "check": { "kind": "fact", "fact": "deployment-live" }, "required": true },
+    { "id": "add-domain", "title": "Add your domain", "body": "steps/add-domain.md", "check": { "kind": "self" }, "required": false },
+    { "id": "dns-records", "title": "The DNS records", "body": "steps/dns-records.md", "check": { "kind": "none" }, "required": false },
+    { "id": "check-dns", "title": "Check DNS", "body": "steps/check-dns.md", "check": { "kind": "self" }, "required": false },
+    { "id": "proof", "title": "Why Vibe64 asks for proof", "body": "steps/proof.md",
+      "check": { "kind": "choice", "question": "Why does Vibe64 ask you to add a TXT record before it serves your domain?",
+        "options": ["To make the app faster.", "To prove the domain is yours, so nobody can attach someone else's domain.", "Because every app needs two addresses.", "It doesn't: any domain works straight away."],
+        "answer": [1] }, "required": true },
+    { "id": "clean-up", "title": "When the lesson ends", "body": "steps/clean-up.md", "check": { "kind": "none" }, "required": false },
+    { "id": "recap", "title": "What you learned", "body": "steps/recap.md", "check": { "kind": "none" }, "required": false }
+  ]
+}

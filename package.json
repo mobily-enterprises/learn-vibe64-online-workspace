@@ -1,0 +1,71 @@
+{
+  "name": "learn-vibe64-online-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobily-enterprises/learn-vibe64-online-workspace.git"
+  },
+  "scripts": {
+    "test": "node tests/sign-app.mjs"
+  },
+  "vibe64Training": {
+    "schemaVersion": 1,
+    "topicId": "vibe64-online-workspace",
+    "domainId": "vibe64",
+    "title": "Your hosted Vibe64 workspace",
+    "status": "preview",
+    "outline": "training/outline.md",
+    "prerequisites": [
+      {
+        "topicId": "vibe64-getting-started"
+      }
+    ],
+    "lessons": [
+      {
+        "code": "V64-WORKSPACE-01",
+        "descriptor": "training/lessons/V64-WORKSPACE-01/lesson.json",
+        "status": "published",
+        "required": true
+      },
+      {
+        "code": "V64-WORKSPACE-02",
+        "descriptor": "training/lessons/V64-WORKSPACE-02/lesson.json",
+        "status": "published",
+        "required": true
+      },
+      {
+        "code": "V64-WORKSPACE-03",
+        "descriptor": "training/lessons/V64-WORKSPACE-03/lesson.json",
+        "status": "published",
+        "required": true
+      },
+      {
+        "code": "V64-WORKSPACE-04",
+        "descriptor": "training/lessons/V64-WORKSPACE-04/lesson.json",
+        "status": "published",
+        "required": true
+      },
+      {
+        "code": "V64-WORKSPACE-05",
+        "descriptor": "training/lessons/V64-WORKSPACE-05/lesson.json",
+        "status": "published",
+        "required": false
+      }
+    ],
+    "places": [
+      "manage-projects",
+      "manage-users",
+      "manage-accounts",
+      "manage-launcher",
+      "deploy",
+      "deploy-production",
+      "deploy-address",
+      "deploy-releases"
+    ],
+    "facts": [
+      "deployment-live"
+    ]
+  }
+}

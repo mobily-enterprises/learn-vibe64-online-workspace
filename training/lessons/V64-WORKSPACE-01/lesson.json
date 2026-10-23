@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "code": "V64-WORKSPACE-01",
+  "title": "Your workspace",
+  "stage": "studio",
+  "notes": "notes.md",
+  "prerequisites": [],
+  "estimatedMinutes": 6,
+  "visuals": [],
+  "steps": [
+    { "id": "welcome", "title": "Welcome", "body": "steps/welcome.md", "check": { "kind": "none" }, "required": false },
+    { "id": "projects", "title": "Projects", "body": "steps/projects.md", "check": { "kind": "self" }, "required": true },
+    { "id": "learn-and-develop", "title": "Two lists of projects", "body": "steps/learn-and-develop.md", "check": { "kind": "self" }, "required": true },
+    { "id": "add-project", "title": "Adding a project", "body": "steps/add-project.md", "check": { "kind": "none" }, "required": false },
+    { "id": "close-and-delete", "title": "Close and Delete", "body": "steps/close-and-delete.md",
+      "check": { "kind": "choice", "question": "You finished with a project that has a deployed app. What does Delete do?",
+        "options": [
+          "It deletes the files but the app stays online.",
+          "It keeps an archive, takes the app offline and frees its address.",
+          "It only closes the project until you open it again.",
+          "It deletes the project with no way to recover it."
+        ], "answer": [1] }, "required": true },
+    { "id": "launcher", "title": "Your deployed apps", "body": "steps/launcher.md", "check": { "kind": "none" }, "required": false },
+    { "id": "recap", "title": "What you learned", "body": "steps/recap.md", "check": { "kind": "none" }, "required": false }
+  ]
+}

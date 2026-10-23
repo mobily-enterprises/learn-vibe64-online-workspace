@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "code": "V64-WORKSPACE-02",
+  "title": "People and team AI",
+  "stage": "studio",
+  "notes": "notes.md",
+  "prerequisites": [{ "code": "V64-WORKSPACE-01" }],
+  "estimatedMinutes": 6,
+  "visuals": [],
+  "steps": [
+    { "id": "welcome", "title": "Welcome", "body": "steps/welcome.md", "check": { "kind": "none" }, "required": false },
+    { "id": "owner-and-members", "title": "Owner and members", "body": "steps/owner-and-members.md",
+      "check": { "kind": "choice", "question": "Who can add a project or a new person to this workspace?",
+        "options": ["Anyone who can sign in.", "Only the workspace owner.", "Only Colleague.", "Nobody: they are fixed when the workspace is made."],
+        "answer": [1] }, "required": true },
+    { "id": "users", "title": "Users", "body": "steps/users.md", "check": { "kind": "self" }, "required": false },
+    { "id": "add-someone", "title": "Adding someone", "body": "steps/add-someone.md", "check": { "kind": "none" }, "required": false },
+    { "id": "team-ai", "title": "Team AI", "body": "steps/team-ai.md", "check": { "kind": "self" }, "required": true },
+    { "id": "approvals", "title": "Messages that wait", "body": "steps/approvals.md",
+      "check": { "kind": "choice", "question": "A team member asks the coding chat in a project for a change. What happens?",
+        "options": ["The change is made straight away.", "Their message waits until the owner approves it.", "Colleague makes the change instead.", "Members can't use the coding chat at all."],
+        "answer": [1] }, "required": true },
+    { "id": "recap", "title": "What you learned", "body": "steps/recap.md", "check": { "kind": "none" }, "required": false }
+  ]
+}

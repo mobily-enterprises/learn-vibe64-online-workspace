@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "code": "V64-WORKSPACE-04",
+  "title": "Keep an eye on your app",
+  "stage": "studio",
+  "notes": "notes.md",
+  "prerequisites": [{ "code": "V64-WORKSPACE-03" }],
+  "estimatedMinutes": 10,
+  "visuals": [],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/sign-app",
+    "reuse": "attempt"
+  },
+  "steps": [
+    { "id": "welcome", "title": "Welcome", "body": "steps/welcome.md", "check": { "kind": "none" }, "required": false },
+    { "id": "ask-colleague", "title": "Ask Colleague to watch", "body": "steps/ask-colleague.md", "check": { "kind": "self" }, "required": true },
+    { "id": "deploy-it", "title": "Deploy it", "body": "steps/deploy-it.md", "check": { "kind": "fact", "fact": "deployment-live" }, "required": true },
+    { "id": "colleague-tells-you", "title": "Colleague tells you", "body": "steps/colleague-tells-you.md", "check": { "kind": "self" }, "required": false },
+    { "id": "logs", "title": "Logs", "body": "steps/logs.md", "check": { "kind": "none" }, "required": false },
+    { "id": "what-to-watch", "title": "What Colleague can watch", "body": "steps/what-to-watch.md",
+      "check": { "kind": "choice", "question": "You are about to deploy, then work on something else. How do you find out if the deployment fails?",
+        "options": ["Keep the Deploy page open and refresh it every minute.", "Ask Colleague: “Tell me if the deployment fails.”", "Ask the coding chat to deploy again.", "There is no way to know."],
+        "answer": [1] }, "required": true },
+    { "id": "launcher", "title": "Launcher", "body": "steps/launcher.md", "check": { "kind": "none" }, "required": false },
+    { "id": "recap", "title": "What you learned", "body": "steps/recap.md", "check": { "kind": "none" }, "required": false }
+  ]
+}

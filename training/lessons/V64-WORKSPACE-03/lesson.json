@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "code": "V64-WORKSPACE-03",
+  "title": "Deploy your app",
+  "stage": "studio",
+  "notes": "notes.md",
+  "prerequisites": [],
+  "estimatedMinutes": 15,
+  "visuals": [],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/sign-app",
+    "reuse": "attempt"
+  },
+  "steps": [
+    { "id": "welcome", "title": "Welcome", "body": "steps/welcome.md", "check": { "kind": "none" }, "required": false },
+    { "id": "open-practice", "title": "Your practice app", "body": "steps/open-practice.md", "check": { "kind": "self" }, "required": true },
+    { "id": "open-deploy", "title": "Find Deploy", "body": "steps/open-deploy.md", "check": { "kind": "self" }, "required": true },
+    { "id": "public-address", "title": "Its public address", "body": "steps/public-address.md", "check": { "kind": "none" }, "required": false },
+    { "id": "deploy-it", "title": "Deploy it", "body": "steps/deploy-it.md", "check": { "kind": "fact", "fact": "deployment-live" }, "required": true },
+    { "id": "visit", "title": "Visit your app", "body": "steps/visit.md", "check": { "kind": "self" }, "required": true },
+    { "id": "new-release", "title": "Change it and deploy again", "body": "steps/new-release.md", "check": { "kind": "self" }, "required": false },
+    { "id": "releases", "title": "Releases and Restore", "body": "steps/releases.md",
+      "check": { "kind": "choice", "question": "Your new release has a mistake. What is the quickest way to put the previous sign back online?",
+        "options": ["Delete the project and start again.", "Restore the previous release in Releases.", "Take the app offline.", "Wait: Vibe64 puts it back by itself."],
+        "answer": [1] }, "required": true },
+    { "id": "offline-and-cleanup", "title": "Offline and clean-up", "body": "steps/offline-and-cleanup.md", "check": { "kind": "none" }, "required": false },
+    { "id": "recap", "title": "What you learned", "body": "steps/recap.md", "check": { "kind": "none" }, "required": false }
+  ]
+}
