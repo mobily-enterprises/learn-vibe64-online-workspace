@@ -1,5 +1,6 @@
 This lesson made a practice project for you: the shop sign. Open it to see
-the sign in **Preview**. Preview is private: only you see it, while you work.
+the sign in **Preview**: press **Open practice project** on the yellow step
+bar. Preview is private: only you see it, while you work.
 
 ```beats
 do preview: Open your practice project.
