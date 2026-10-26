@@ -1,4 +1,4 @@
-# Your hosted Vibe64 workspace — topic 0.1.0 (preview)
+# Your hosted Vibe64 workspace — topic 0.1.1 (preview)
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-online-workspace`,
 the hosted lessons of the course **Getting started with Vibe64**. Publishing
