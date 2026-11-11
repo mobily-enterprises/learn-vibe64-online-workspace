@@ -2,7 +2,7 @@
 
 ## `sign` Shop sign
 
-Serves the one-page shop sign whose words live in `sign.mjs`, and a health route for Preview and the deployment's readiness check.
+Serves the one-page shop sign whose words live in `sign.mjs`, and a health route for Preview's and Production's readiness checks.
 
 ### Source
 

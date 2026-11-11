@@ -1,4 +1,4 @@
-# Your hosted Vibe64 workspace — topic 0.1.1 (preview)
+# Your hosted Vibe64 workspace — topic 0.1.2 (preview)
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-online-workspace`,
 the hosted lessons of the course **Getting started with Vibe64**. Publishing
@@ -25,11 +25,16 @@ npm test
 ```
 
 `npm test` starts the sign practice app the way Preview does (arguments) and
-the way a deployment does (`HOST` and `PORT`) and checks its page and health
-route. It needs Node.js 22 or newer and no dependencies.
+the way Production does (`HOST` and `PORT`) and checks its page and health
+route, then checks the lessons' wording and the hosted places they use. It
+needs Node.js 22 or newer and no dependencies.
 
-## Real deployments
+## Publishing for real
 
-Lessons 03 to 05 deploy their practice app for real. The hosted workspace
-removes the deployment when the practice project is removed: when the lesson
-is finished, restarted or deleted.
+Lessons 03 to 05 publish their practice app to Production for real, as a Test
+copy. The hosted workspace takes the app offline and removes it when the
+practice project is removed: when the lesson is finished, restarted or deleted.
+
+The hosted product says Publish and Production; the place, activity and fact
+names (`deploy`, `deploy-production`, `app-deployed`, `deployment-live` and
+the rest) are Online's own ids and stay as they are.

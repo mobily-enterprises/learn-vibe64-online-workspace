@@ -2,11 +2,11 @@
 
 ## Watches
 
-A watch is Colleague checking something for you in the background: a
-deployment, or a coding conversation in one of your projects. It tells you in
+A watch is Colleague checking something for you in the background: an app's
+Production, or a coding conversation in one of your projects. It tells you in
 Colleague when its condition is met. The eye-and-count **Watches and
 assignments** button in Colleague lists your watches, where **Cancel** stops
-one. A watch only reports: it never deploys, restarts or changes anything.
+one. A watch only reports: it never publishes, restarts or changes anything.
 
 ## In lessons
 

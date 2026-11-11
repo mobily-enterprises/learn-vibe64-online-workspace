@@ -9,7 +9,7 @@ you where you were.
 ## Deleted projects
 
 Delete keeps an archive of the project's code and data before it removes the
-project. A deployed app is taken offline as part of the deletion; its
+project. A published app is taken offline as part of the deletion; its
 production database is kept.
 
 ## Who can do what

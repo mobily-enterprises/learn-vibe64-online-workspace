@@ -1,11 +1,13 @@
-Press **Deploy**. Vibe64 shows where the app will go; choose **Deploy** again
-to confirm. It then copies your saved work, starts the app and checks that it
-answers. This takes a minute or two; the output shows each stage.
+Press **Publish to production**. Vibe64 shows where the app will go; choose
+**Publish** to confirm. It then copies your saved work, starts the app and
+checks that it answers. This takes a minute or two; the output shows each
+stage.
 
-When **Production** says **deployed**, press **Check now**. If the deployment
-fails, open its logs from **Releases**, or ask Colleague what went wrong.
+When the **Publish to production** card says **published**, press
+**Check now**. If the publish fails, Production says why; open its logs from
+**Releases**, or ask Colleague what went wrong.
 
 ```beats
-show deploy-production: Press Deploy, read where it goes, then press Deploy again.
-check fact: Press Check now once Production says deployed.
+show deploy-production: Press Publish to production, read where it goes, then press Publish.
+check fact: Press Check now once the card says published.
 ```

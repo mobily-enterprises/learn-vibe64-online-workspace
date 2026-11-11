@@ -1,5 +1,5 @@
 Your workspace is everything outside a single project: the list of projects,
-the people who can sign in, your AI and the apps you have deployed. This
+the people who can sign in, your AI and the apps you have published. This
 lesson walks you around the Projects page and what you can do with a project
 from there.
 

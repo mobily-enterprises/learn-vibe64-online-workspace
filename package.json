@@ -1,14 +1,14 @@
 {
   "name": "learn-vibe64-online-workspace",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/mobily-enterprises/learn-vibe64-online-workspace.git"
   },
   "scripts": {
-    "test": "node tests/sign-app.mjs"
+    "test": "node tests/sign-app.mjs && node tests/content-regressions.mjs"
   },
   "vibe64Training": {
     "schemaVersion": 1,
@@ -61,6 +61,7 @@
       "manage-launcher",
       "deploy",
       "deploy-production",
+      "deploy-mode",
       "deploy-address",
       "deploy-releases"
     ],

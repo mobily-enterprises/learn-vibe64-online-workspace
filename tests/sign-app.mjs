@@ -3,7 +3,7 @@ import { spawn } from 'node:child_process';
 import { once } from 'node:events';
 import { createServer } from 'node:net';
 
-// Start the sign app as Preview does (--host/--port) and as a deployment does
+// Start the sign app as Preview does (--host/--port) and as Production does
 // (HOST/PORT), then read its page and health route.
 const server = new URL('../training/exercises/sign-app/server.mjs', import.meta.url).pathname;
 
@@ -40,6 +40,6 @@ async function check(port) {
 
 const previewPort = await freePort();
 await withApp({ args: ['--host', '127.0.0.1', '--port', String(previewPort)] }, () => check(previewPort));
-const deployedPort = await freePort();
-await withApp({ env: { HOST: '127.0.0.1', PORT: String(deployedPort) } }, () => check(deployedPort));
-console.log('sign app: Preview and deployment starts pass');
+const productionPort = await freePort();
+await withApp({ env: { HOST: '127.0.0.1', PORT: String(productionPort) } }, () => check(productionPort));
+console.log('sign app: Preview and Production starts pass');
