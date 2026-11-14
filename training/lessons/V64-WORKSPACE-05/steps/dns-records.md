@@ -6,7 +6,7 @@ At your domain provider, add:
 
 1. that **TXT** record, exactly as shown;
 2. a **CNAME** record for your domain whose value is your app's Vibe64
-   address (the link on the **Publish to production** card), so visitors
+   address (the link on the **Publish to staging** card), so visitors
    reach the app.
 
 DNS changes can take from a few minutes to a few hours to be seen.

@@ -9,7 +9,7 @@ publish again.
 
 ## When a publish fails
 
-Production says which step failed and why. **View failure logs**, or the
+Staging says which step failed and why. **View failure logs**, or the
 failed release's **Logs** in **Releases**, show everything it did. Colleague
 can read them with you and explain what went wrong. A failed publish leaves
 the previous release online, if there was one. **Check build** runs the same

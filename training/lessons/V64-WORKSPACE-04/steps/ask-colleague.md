@@ -2,8 +2,8 @@ Open Colleague and ask it, in your own words:
 
 > Tell me when my practice app is live.
 
-Colleague starts a **watch** on your practice app's Production. It checks
-Production for you and speaks up when the app goes live. It publishes nothing
+Colleague starts a **watch** on your practice app's Staging. It checks
+Staging for you and speaks up when the app goes live. It publishes nothing
 itself: watching never changes your app.
 
 ```beats

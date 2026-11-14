@@ -2,7 +2,7 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { sign } from './sign.mjs';
 
-// Preview passes --host and --port; Production sets HOST and PORT instead.
+// Preview passes --host and --port; Staging sets HOST and PORT instead.
 let host = process.env.HOST || '127.0.0.1';
 let port = Number(process.env.PORT || 8080);
 const args = process.argv.slice(2);

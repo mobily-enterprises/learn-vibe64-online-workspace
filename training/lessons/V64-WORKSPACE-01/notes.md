@@ -10,7 +10,7 @@ you where you were.
 
 Delete keeps an archive of the project's code and data before it removes the
 project. A published app is taken offline as part of the deletion; its
-production database is kept.
+staging database is kept.
 
 ## Who can do what
 

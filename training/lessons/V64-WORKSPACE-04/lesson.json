@@ -20,7 +20,7 @@
     { "id": "logs", "title": "Logs", "body": "steps/logs.md", "check": { "kind": "none" }, "required": false },
     { "id": "what-to-watch", "title": "What Colleague can watch", "body": "steps/what-to-watch.md",
       "check": { "kind": "choice", "question": "You are about to publish, then work on something else. How do you find out if the publish fails?",
-        "options": ["Keep the Production page open and refresh it every minute.", "Ask Colleague: “Tell me if the publish fails.”", "Ask the coding chat to publish again.", "There is no way to know."],
+        "options": ["Keep the Staging page open and refresh it every minute.", "Ask Colleague: “Tell me if the publish fails.”", "Ask the coding chat to publish again.", "There is no way to know."],
         "answer": [1] }, "required": true },
     { "id": "launcher", "title": "Launcher", "body": "steps/launcher.md", "check": { "kind": "none" }, "required": false },
     { "id": "recap", "title": "What you learned", "body": "steps/recap.md", "check": { "kind": "none" }, "required": false }

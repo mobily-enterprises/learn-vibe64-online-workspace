@@ -1,4 +1,4 @@
-**Take offline** on the **Publish to production** card stops serving the app
+**Take offline** on the **Publish to staging** card stops serving the app
 at its address. Its releases stay, so you can restore one later.
 
 For this lesson there is nothing to clean up: when you finish, restart or
