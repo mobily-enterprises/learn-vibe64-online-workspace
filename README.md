@@ -1,4 +1,4 @@
-# Your hosted Vibe64 workspace — topic 0.1.3 (preview)
+# Your hosted Vibe64 workspace — topic 0.1.4 (preview)
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-online-workspace`,
 the hosted lessons of the course **Getting started with Vibe64**. Publishing
@@ -37,6 +37,7 @@ owner's test addresses. The hosted workspace takes the app offline and removes
 it when the practice project is removed: when the lesson is finished,
 restarted or deleted.
 
-The hosted product says Publish and Staging; the place, activity and fact
+The hosted product says Publish for the action, Staging for the environment
+and Deploy for the Dashboard page that publishes to it; the place, activity and fact
 names (`deploy`, `deploy-staging`, `app-deployed`, `deployment-live` and
 the rest) are Online's own ids and change only when Online renames them.

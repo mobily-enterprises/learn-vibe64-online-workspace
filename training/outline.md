@@ -1,6 +1,6 @@
 # Your hosted Vibe64 workspace
 
-Topic 0.1.3 teaches the screens and abilities a hosted Vibe64 workspace adds:
+Topic 0.1.4 teaches the screens and abilities a hosted Vibe64 workspace adds:
 its projects and people, team AI, and publishing an app for real. Every lesson
 is a **studio** lesson: Learn opens on the Management pages with the lesson's
 step bar above them, and the lessons that publish make their own practice

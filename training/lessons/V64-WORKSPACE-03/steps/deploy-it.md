@@ -4,7 +4,7 @@ checks that it answers. This takes a minute or two; the output shows each
 stage.
 
 When the **Publish to staging** card says **published**, press
-**Check now**. If the publish fails, Staging says why; open its logs from
+**Check now**. If the publish fails, Deploy says why; open its logs from
 **Releases**, or ask Colleague what went wrong.
 
 ```beats
