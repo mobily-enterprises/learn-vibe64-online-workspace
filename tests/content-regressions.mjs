@@ -3,9 +3,10 @@ import { readFile } from 'node:fs/promises';
 
 // The lessons' own words and the hosted names they use. The hosted product says
 // Publish for the action and Staging for the environment, and names the
-// Dashboard page that publishes to Staging Deploy; deploy-* places, app-deployed
-// and deployment-live are Online's ids, which only beat targets, check facts and
-// package.json name.
+// Dashboard page that publishes to Staging Deploy; deploy-* places, app-on-staging
+// and staging-running are Online's ids, which only beat targets, check facts and
+// package.json name. Staging is never live: the app is running on Staging, and only
+// Production, which no lesson here uses, is ever Live.
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), 'utf8');
 const topic = JSON.parse(await read('package.json')).vibe64Training;
 
@@ -39,7 +40,7 @@ for (const entry of topic.lessons) {
       visible.push([`${where} beat`, text]);
       if (kind === 'check' || BUILT_IN.has(target)) continue;
       stepsUsing.set(target, [...stepsUsing.get(target) || [], step]);
-      used[target === 'app-deployed' ? 'activities' : 'places'].add(target);
+      used[target === 'app-on-staging' ? 'activities' : 'places'].add(target);
     }
   }
 }
@@ -57,17 +58,24 @@ for (const [where, text] of visible) {
   }
   assert.doesNotMatch(words, STAGING_PAGE, `${where} names the page Deploy; Staging is the environment`);
   assert.doesNotMatch(words, /production|test copy/iu, `${where} says Staging and test addresses, not Production or Test copy`);
+  assert.doesNotMatch(words, /\b(?:is|was|goes|went|already)\s+live\b|\*\*live\*\*/iu, `${where} says the app is running on Staging; only Production is ever Live`);
 }
 console.log(`PASS: ${visible.length} learner-facing texts say Publish, Staging for the environment and Deploy for its page.`);
 
 assert.deepEqual([...used.places].sort(), [...topic.places].sort(), 'the topic declares exactly the hosted places its beats use');
 assert.deepEqual([...used.activities].sort(), [...topic.activities].sort(), 'the topic declares exactly the hosted activities its beats use');
 assert.deepEqual([...used.facts].sort(), [...topic.facts].sort(), 'the topic declares exactly the facts its steps check');
+// Online renamed these on 20 Nov 2026 (Staging's places deploy-staging-*, the activity app-on-staging and the fact
+// staging-running); a lesson naming an old one points at nothing. Online's learningPlacesDrift checks the rest.
+const RETIRED = new Set(['deploy-test-addresses', 'deploy-address', 'deploy-releases', 'app-deployed', 'deployment-live']);
+for (const id of [...topic.places, ...topic.activities, ...topic.facts]) {
+  assert.ok(!RETIRED.has(id), `${id} is a name Online retired: use its Staging name (deploy-staging-*, app-on-staging, staging-running)`);
+}
 console.log('PASS: the topic declares exactly the hosted places, activities and facts its lessons use.');
 
 // Each lesson that publishes the sign names the Deploy page, its button and the confirmation.
 for (const code of ['V64-WORKSPACE-03', 'V64-WORKSPACE-04', 'V64-WORKSPACE-05']) {
-  const step = lessons[code].steps.find(entry => entry.check.fact === 'deployment-live');
+  const step = lessons[code].steps.find(entry => entry.check.fact === 'staging-running');
   assert.equal(step.required, true, `${code} publishes the sign`);
   const body = await read(`training/lessons/${code}/${step.body}`);
   assert.match(body, /\*\*Publish to staging\*\*/u, code);
@@ -93,6 +101,6 @@ const testAddressesBody = await read(`training/lessons/V64-WORKSPACE-03/${testAd
 assert.match(testAddressesBody, /^Staging never acts for real\./mu);
 assert.match(testAddressesBody, /\*\*Test email address\*\*/u);
 assert.match(testAddressesBody, /\*\*Test phone number\*\*/u);
-assert.match(testAddressesBody, /^show deploy-test-addresses: /mu);
-assert.deepEqual(stepsUsing.get('deploy-test-addresses'), [testAddresses], 'only the optional Test addresses step points at Test addresses');
+assert.match(testAddressesBody, /^show deploy-staging-test-addresses: /mu);
+assert.deepEqual(stepsUsing.get('deploy-staging-test-addresses'), [testAddresses], 'only the optional Test addresses step points at Test addresses');
 console.log('PASS: the publishing lessons name Deploy, Publish to staging, Publish and the Test addresses.');

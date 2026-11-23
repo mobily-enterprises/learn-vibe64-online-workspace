@@ -1,7 +1,7 @@
 {
   "name": "learn-vibe64-online-workspace",
   "private": true,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "repository": {
     "type": "git",
@@ -61,15 +61,15 @@
       "manage-launcher",
       "deploy",
       "deploy-staging",
-      "deploy-test-addresses",
-      "deploy-address",
-      "deploy-releases"
+      "deploy-staging-test-addresses",
+      "deploy-staging-address",
+      "deploy-staging-releases"
     ],
     "activities": [
-      "app-deployed"
+      "app-on-staging"
     ],
     "facts": [
-      "deployment-live"
+      "staging-running"
     ]
   }
 }

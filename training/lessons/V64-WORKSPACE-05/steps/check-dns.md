@@ -7,6 +7,6 @@ Then open your domain in a browser: it shows the same sign as the Vibe64
 address.
 
 ```beats
-show deploy-address: Choose Check DNS beside your domain.
+show deploy-staging-address: Choose Check DNS beside your domain.
 check done: Press Done when your domain shows the sign, or if you are reading along.
 ```

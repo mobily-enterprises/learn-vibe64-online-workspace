@@ -17,7 +17,7 @@
     { "id": "open-practice", "title": "Your practice app", "body": "steps/open-practice.md", "check": { "kind": "self" }, "required": true },
     { "id": "open-deploy", "title": "Find Deploy", "body": "steps/open-deploy.md", "check": { "kind": "self" }, "required": true },
     { "id": "public-address", "title": "Its public address", "body": "steps/public-address.md", "check": { "kind": "none" }, "required": false },
-    { "id": "deploy-it", "title": "Publish it", "body": "steps/deploy-it.md", "check": { "kind": "fact", "fact": "deployment-live" }, "required": true },
+    { "id": "deploy-it", "title": "Publish it", "body": "steps/deploy-it.md", "check": { "kind": "fact", "fact": "staging-running" }, "required": true },
     { "id": "visit", "title": "Visit your app", "body": "steps/visit.md", "check": { "kind": "self" }, "required": true },
     { "id": "test-addresses", "title": "Test addresses", "body": "steps/test-addresses.md", "check": { "kind": "none" }, "required": false },
     { "id": "new-release", "title": "Change it and publish again", "body": "steps/new-release.md", "check": { "kind": "self" }, "required": false },

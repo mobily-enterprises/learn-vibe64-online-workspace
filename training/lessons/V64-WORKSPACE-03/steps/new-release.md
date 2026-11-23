@@ -13,6 +13,6 @@ without it.
 do send-message: "Change the sign's message to say we are closed on Sundays."
 do agent-finished: Wait while the agent works.
 do save: Save your change.
-do app-deployed: Open Deploy, press Publish to staging, then Publish.
+do app-on-staging: Open Deploy, press Publish to staging, then Publish.
 check done: Press Done when the new sign is online.
 ```

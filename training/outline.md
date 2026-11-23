@@ -28,8 +28,8 @@ app's Staging; attach a custom domain.
 | --- | --- | --- | --- | --- |
 | 01 | V64-WORKSPACE-01 | Your workspace | Find Projects and Launcher; switch the Learn and Develop lists with **L**; know what Add project, Close and Delete do (Delete takes a published app offline). | 7 (2 self, 1 choice required) |
 | 02 | V64-WORKSPACE-02 | People and team AI | Explain owner and members, find Users (owner) and AI Accounts, what team AI is and why members' coding messages wait for approval. | 7 (1 self, 2 choice required; Users steps owner only) |
-| 03 | V64-WORKSPACE-03 | Publish your app | Publish the practice sign to Staging at a public address and visit it, know that Staging sends email and SMS only to the owner's test addresses, publish a change as a new release, know Restore and Take offline. | 11 (1 fact `deployment-live`, 3 self, 1 choice required) |
-| 04 | V64-WORKSPACE-04 | Keep an eye on your app | Ask Colleague to watch the app's Staging, publish and hear back when it is live; know what Colleague can watch and where logs are. | 8 (1 fact, 1 self, 1 choice required) |
+| 03 | V64-WORKSPACE-03 | Publish your app | Publish the practice sign to Staging at a public address and visit it, know that Staging sends email and SMS only to the owner's test addresses, publish a change as a new release, know Restore and Take offline. | 11 (1 fact `staging-running`, 3 self, 1 choice required) |
+| 04 | V64-WORKSPACE-04 | Keep an eye on your app | Ask Colleague to watch the app's Staging, publish and hear back when it is running on Staging; know what Colleague can watch and where logs are. | 8 (1 fact, 1 self, 1 choice required) |
 | 05 | V64-WORKSPACE-05 | Your own domain (optional) | Add a custom domain, its TXT and CNAME records and Check DNS; know why the proof is needed. | 8 (1 fact, 1 choice required) |
 
 Lessons 03 to 05 publish the **sign** practice app (`training/exercises/sign-app`)

@@ -39,5 +39,5 @@ restarted or deleted.
 
 The hosted product says Publish for the action, Staging for the environment
 and Deploy for the Dashboard page that publishes to it; the place, activity and fact
-names (`deploy`, `deploy-staging`, `app-deployed`, `deployment-live` and
+names (`deploy`, `deploy-staging`, `app-on-staging`, `staging-running` and
 the rest) are Online's own ids and change only when Online renames them.

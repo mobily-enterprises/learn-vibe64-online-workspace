@@ -12,5 +12,5 @@ At your domain provider, add:
 DNS changes can take from a few minutes to a few hours to be seen.
 
 ```beats
-show deploy-address: The record to add at your domain provider is shown under your domain.
+show deploy-staging-address: The record to add at your domain provider is shown under your domain.
 ```

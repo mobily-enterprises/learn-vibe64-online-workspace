@@ -5,5 +5,5 @@ Ask it, for example:
 > Is my practice app healthy? Show me anything odd in its logs.
 
 ```beats
-show deploy-releases: Logs for each release are here.
+show deploy-staging-releases: Logs for each release are here.
 ```

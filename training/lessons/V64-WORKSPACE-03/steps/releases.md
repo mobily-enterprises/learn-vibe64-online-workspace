@@ -4,5 +4,5 @@ without building it again: the quickest way out of a release with a mistake.
 Fix the project afterwards and publish again.
 
 ```beats
-show deploy-releases: Each publish is a release. Restore brings an earlier one back.
+show deploy-staging-releases: Each publish is a release. Restore brings an earlier one back.
 ```

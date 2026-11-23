@@ -2,11 +2,11 @@ Now publish, as in **Publish your app**: open your practice project, then
 **Dashboard → Deploy**, press **Publish to staging** and confirm with
 **Publish**.
 
-You don't need to watch the output: Colleague tells you when the app is live.
+You don't need to watch the output: Colleague tells you when the app is running on Staging.
 Then press **Check now**.
 
 ```beats
 do deploy: Open your practice project's Deploy page.
 show deploy-staging: Press Publish to staging, then Publish to confirm.
-check fact: Press Check now when Colleague says your app is live.
+check fact: Press Check now when Colleague says your app is running on Staging.
 ```

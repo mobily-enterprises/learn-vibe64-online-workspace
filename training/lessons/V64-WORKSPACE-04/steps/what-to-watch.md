@@ -1,6 +1,6 @@
 Colleague can watch your app's Staging for three things:
 
-- **live**: the app is live at its address (said at once if it already is);
+- **running**: the app is running on Staging at its address (said at once if it already is);
 - **failed**: a publish, or the running release, failed;
 - **changed**: anything about Staging changed, such as a new release
   or the app going offline.

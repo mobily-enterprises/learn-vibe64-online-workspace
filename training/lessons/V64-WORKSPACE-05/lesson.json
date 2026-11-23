@@ -14,7 +14,7 @@
   },
   "steps": [
     { "id": "welcome", "title": "Welcome", "body": "steps/welcome.md", "check": { "kind": "none" }, "required": false },
-    { "id": "deploy-it", "title": "Publish the sign", "body": "steps/deploy-it.md", "check": { "kind": "fact", "fact": "deployment-live" }, "required": true },
+    { "id": "deploy-it", "title": "Publish the sign", "body": "steps/deploy-it.md", "check": { "kind": "fact", "fact": "staging-running" }, "required": true },
     { "id": "add-domain", "title": "Add your domain", "body": "steps/add-domain.md", "check": { "kind": "self" }, "required": false },
     { "id": "dns-records", "title": "The DNS records", "body": "steps/dns-records.md", "check": { "kind": "none" }, "required": false },
     { "id": "check-dns", "title": "Check DNS", "body": "steps/check-dns.md", "check": { "kind": "self" }, "required": false },

@@ -7,5 +7,5 @@ the two fields to see what the app sends.
 You don't need to change anything now: the sign sends nothing.
 
 ```beats
-show deploy-test-addresses: Staging sends email and SMS only to these test addresses, and logs them while they are empty.
+show deploy-staging-test-addresses: Staging sends email and SMS only to these test addresses, and logs them while they are empty.
 ```

@@ -1,4 +1,4 @@
-When the app went live, Colleague told you in its conversation, with the
+When the app was running on Staging, Colleague told you in its conversation, with the
 app's address. If Colleague was closed, open it to read the message.
 
 Your watches are listed under the eye-and-count **Watches and assignments**
